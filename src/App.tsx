@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Add from "./containers/Add/Add";
 import EditPost from "./containers/EditPost/EditPost";
 import Home from "./containers/Home/Home";
+import Admin from "./containers/Pages/Admin";
 import Pages from "./containers/Pages/Pages";
 import PostPage from "./containers/PostPage/PostPage";
 
@@ -24,6 +25,7 @@ function App() {
           </Route>
           <Route path="/new-post" element={<Add />} />
           <Route path="/pages/:pageName" element={<Pages />} />
+          <Route path="/pages/admin" element={<Admin />} />
           <Route path="*" element={<h4>Not found!</h4>} />
         </Routes>
       </main>
