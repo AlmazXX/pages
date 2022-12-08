@@ -19,10 +19,10 @@ const Pages = () => {
   return (
     <div className="row mt-3 text-center lh-lg">
       {page && (
-        <>
+        <div className="col">
           <h4>{page.title}</h4>
           <p>{page.content}</p>
-        </>
+        </div>
       )}
     </div>
   );
