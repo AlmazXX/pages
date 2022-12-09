@@ -104,7 +104,7 @@ const PageForm: FC<Props> = ({ existingHandles, existingPages, onSubmit }) => {
       </div>
       <div className="d-flex gap-3 px-0 mb-3">
         <button type="submit" className="btn btn-primary">
-          Submit
+          {existingHandles ? 'Edit' : 'Submit'}
         </button>
       </div>
     </form>
