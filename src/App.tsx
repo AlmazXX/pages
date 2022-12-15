@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
+import Home from "./containers/Home/Home";
 import Create from "./containers/Pages/Create";
 import Edit from "./containers/Pages/Edit";
 import Pages from "./containers/Pages/Pages";
@@ -12,6 +13,7 @@ function App() {
       </header>
       <main className="container">
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/pages/:pageName" element={<Pages />} />
           <Route path="/pages/admin" element={<Edit/>} />
           <Route path="/pages/create" element={<Create/>} />
